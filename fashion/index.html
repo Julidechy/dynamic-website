@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <!--Styles-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/custom.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+</head>
+<body data-barba="wrapper" class="relative antialiased bg-gray-900 font-montserrat overflow-x-hidden min-h-screen">
+    <header class="nav-header absolute top-0 left-1/2 transform -translate-x-1/2 w-full text-4xl flex justify-between items-center xl:max-w-screen-lg 2xl:max-w-screen-xl mx-auto p-6">
+        <h1 class="text-white font-abril">
+            <a href="../index.html" id="logo">days.</a>
+        </h1>
+        <div class="burger cursor-pointer origin-center relative">
+            <div class="line1 w-8 h-0.5 m-3 pointer-events-none bg-white"></div>
+            <div class="line2 w-8 h-0.5 m-3 pointer-events-none bg-white"></div>
+        </div>
+    </header>
+    <div data-barba="container" data-barba-namespace="fashion" class="max-w-screen-xl mx-auto relative">
+        <main class="p-6 absolute">
+            <section class="fashion1 detail-slide text-white flex justify-center items-center w-full md:w-4/5 mx-auto my-10 md:my-20 flex-wrap relative">
+                <div class="fashion-text flex-1 relative">
+                    <h1 class="text-6xl font-bold my-4 text-indigo-200">Julia Parker</h1>
+                    <p class="text-lg pt-8 pr-8 mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium natus cum dignissimos numquam quia perspiciatis dolor tempore cumque possimus vel.</p>
+                </div>
+                <div class="fashion-img">
+                    <img class="w-full h-full object-cover object-top" src="../assets/fashion-img1.png" alt="Julia Parker">
+                </div>
+                <div class="fashion-nr text-black md:text-white text-8xl absolute right-0 md:left-1/4 top-1/2 md:top-20 opacity-20">
+                    <span>01</span>
+                </div>
+            </section>
+            <section class="fashion2 detail-slide mt-48 text-white flex justify-center items-center w-full md:w-4/5 mx-auto my-10 md:my-20 flex-wrap relative">
+                <div class="fashion-text flex-1 relative">
+                    <h1 class="text-6xl font-bold my-4 text-yellow-200">Carla Summer</h1>
+                    <p class="text-lg pt-8 pr-8 mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium natus cum dignissimos numquam quia perspiciatis dolor tempore cumque possimus vel.</p>
+                </div>
+                <div class="fashion-img">
+                    <img class="w-full h-full object-cover object-top" src="../assets/fashion-img2.png" alt="Carla Summer">
+                </div>
+                <div class="fashion-nr text-black md:text-white text-8xl absolute right-0 md:left-1/4 top-1/2 md:top-20 opacity-20">
+                    <span>02</span>
+                </div>
+            </section>
+            <section class="fashion3 detail-slide mt-48 text-white flex justify-center items-center w-full md:w-4/5 mx-auto my-10 md:my-20 flex-wrap relative">
+                <div class="fashion-text flex-1 relative">
+                    <h1 class="text-6xl font-bold my-4 text-green-200">Antonia Lorenzini</h1>
+                    <p class="text-lg pt-8 pr-8 mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium natus cum dignissimos numquam quia perspiciatis dolor tempore cumque possimus vel.</p>
+                </div>
+                <div class="fashion-img">
+                    <img class="w-full h-full object-cover object-top" src="../assets/fashion-img3.png" alt="Antonia Lorenzini">
+                </div>
+                <div class="fashion-nr text-black md:text-white text-8xl absolute right-0 md:left-1/4 top-1/2 md:top-20 opacity-20">
+                    <span>03</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <nav class="nav-bar fixed top-0 left-0 w-full h-full bg-white flex flex-col md:flex-row justify-center md:justify-around items-center z-10 opacity-100">
+        <ul class="nav-links text-2xl md:text-5xl w-64">
+            <li class="py-4 md:py-12">Twitter</li>
+            <li class="py-4 md:py-12">Youtube</li>
+            <li class="py-4 md:py-12">Instagram</li>
+        </ul>
+        <div class="contact w-64">
+            <h2 class="text-2xl md:text-5xl py-4 md:py-12">Stay in touch</h2>
+            <p class="leading-relaxed py-4 md:py-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, eum vel. Autem distinctio iste dignissimos amet numquam repellendus vitae odit.</p>
+        </div>
+    </nav>
+    <div class="cursor w-12 h-12 border border-transparent rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        <span class="cursor-text text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+    </div>
+    <div class="swipe swipe1 bg-purple-600 fixed w-full h-full top-0 left-0"></div>
+    <div class="swipe swipe2 bg-blue-500 fixed w-full h-full top-0 left-0"></div>
+    <div class="swipe swipe3 bg-yellow-500 fixed w-full h-full top-0 left-0"></div>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="../assets/app.js"></script>
+</body>
+</html>
